@@ -1,0 +1,241 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-column {
+  flex: 1;
+  text-align: center;
+  margin: 40px 20px 80px 20px;
+}
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+.flex-nav-tab {
+  flex: 1;
+  margin: 0 20px -10px 20px;
+}
+/* section classes */
+section {
+  padding-top: 20px;
+  color: inherit;
+  background-color: inherit;
+}
+.inverted {
+  background-color: #1d4668;
+  color: #ffffff;
+  /*padding: 20px 45px;*/
+}
+.transitional {
+  background-color: #dbf1fc;
+  /*padding: 20px 45px;*/
+}
+article {
+  padding: 20px 45px 20px 45px;
+}
+/* Mobile first styles go here */
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.half {
+  width: 100%;
+}
+
+body {
+  color: #66686d;
+  font-size: 18pt;
+}
+h2 {
+  color: #1d4668;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 30px 0;
+}
+.inverted h2 {
+  color: #ffffff;
+}
+h3 {
+  margin: 10px 0;
+  color: #e8651a;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-size: 1.5rem;
+}
+.dividing {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: #1d4668;
+	margin: 0.9rem 0;
+}
+.dividing::before,
+.dividing::after {
+	content: "";
+	flex-grow: 1;
+	background-color: #1d4668;
+	height: 1px;
+	font-size: 0;
+	line-height: 0;
+	margin: 0 0.9rem;
+}
+.inverted .dividing {
+  color: #ffffff;
+}
+.inverted .dividing::before,
+.inverted .dividing::after {
+  background-color: #ffffff;
+}
+ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+li {
+  margin-bottom: 0.6rem;
+}
+li:before {
+  display: block;
+  float: left;
+  width: 1.5rem;
+  color: #e8651a;
+  content: "\25cf";
+}
+.pointer {
+  visibility: hidden;
+  display: inline-block;
+	width: 0;
+	height: 0;
+  margin: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 40px solid #1d4668;
+}
+.active {
+  visibility: visible;
+}
+.tabbed-panels {
+  position: relative;
+  height: 150px;
+}
+.tabbed-panels .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.justified {
+  text-align: justify;
+}
+.centered {
+  text-align: center;
+}
+.bumped-left {
+  padding-left: 1.5rem;
+}
+.button {
+  display: inline;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.08rem;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #e8651a;
+  border: 1px solid #e8651a;
+  color: #ffffff;
+  padding: 12px 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 800px) {
+  /* Desktop styles go here */
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+    padding-left: 14px;
+    padding-right: 0;
+  }
+  .half:first-child {
+    padding-left: 0;
+    padding-right: 14px;
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .column {
+    float: left;
+  }
+  /*h1 {
+    font-size: 2rem;
+  }*/
+  .container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+  }
+  .tabbed-tabs .tab {
+    text-align: center;
+    color: #1d4668;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  header {
+    height: 500px;
+    background-size: cover;
+  }
+  header .slogan {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  footer.prefooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    background-size: cover;
+  }
+  footer.bottom {
+    border-top: 10px solid #e8651a;
+    height: 75px;
+  }
+}
