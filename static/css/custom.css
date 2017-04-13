@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-family: 'Archivo Narrow', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -66,6 +65,7 @@ article {
 
 body {
   /*color: #66686d;*/
+  font-family: 'Archivo Narrow', sans-serif;
   color: #808287;
   font-size: 18pt;
 }
@@ -157,6 +157,7 @@ li:before {
   padding-left: 1.5rem;
 }
 button {
+  font-family: 'Archivo Narrow', sans-serif;
   display: inline;
   font-weight: bold;
   font-size: 1.5rem;
@@ -231,6 +232,7 @@ button {
     border-left: none;
   }
   .nav-button {
+    font-family: 'Archivo Narrow', sans-serif;
     display: inline;
     font-size: 1.25rem;
     -webkit-border-radius: 5px;
