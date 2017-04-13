@@ -33,6 +33,7 @@ html {
 .flex-nav-tab {
   flex: 1;
   margin: 0 20px -10px 20px;
+  cursor: pointer;
 }
 /* section classes */
 section {
@@ -42,7 +43,9 @@ section {
 }
 .inverted {
   background-color: #1d4668;
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #F4F6F7;
+  /*color: #E8ECF0;*/
   /*padding: 20px 45px;*/
 }
 .transitional {
@@ -62,7 +65,8 @@ article {
 }
 
 body {
-  color: #66686d;
+  /*color: #66686d;*/
+  color: #808287;
   font-size: 18pt;
 }
 h2 {
@@ -152,7 +156,7 @@ li:before {
 .bumped-left {
   padding-left: 1.5rem;
 }
-.button {
+button {
   display: inline;
   font-weight: bold;
   font-size: 1.5rem;
@@ -211,7 +215,39 @@ li:before {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
+  nav {
+    text-align: right;
+  }
+  .nav-item {
+    color: #1d4668;
+    font-size: 1.25rem;
+    border-left: 1px solid #1d4668;
+    text-transform: uppercase;
+    display: inline;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  .nav-item:first-child {
+    border-left: none;
+  }
+  .nav-button {
+    display: inline;
+    font-size: 1.25rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #1d4668;
+    border: 1px solid #1d4668;
+    color: #ffffff;
+    padding: 9px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
   header {
+    position: relative;
     height: 500px;
     background-size: cover;
   }
@@ -224,6 +260,7 @@ li:before {
     text-align: center;
     font-size: 2.5rem;
     color: #ffffff;
+    /*color: #E8ECF0;*/
   }
   footer.prefooter {
     display: flex;
