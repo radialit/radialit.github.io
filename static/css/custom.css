@@ -32,7 +32,6 @@ html {
 .flex-nav-tab {
   flex: 1;
   margin: 0 20px -10px 20px;
-  cursor: pointer;
 }
 /* section classes */
 section {
@@ -135,7 +134,7 @@ li:before {
 	border-right: 22px solid transparent;
 	border-bottom: 40px solid #1d4668;
 }
-.active {
+.active .pointer {
   visibility: visible;
 }
 .tabbed-panels {
@@ -143,9 +142,13 @@ li:before {
   height: 150px;
 }
 .tabbed-panels .panel {
+  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
+}
+.tabbed-panels .active {
+  visibility: visible;
 }
 .justified {
   text-align: justify;
@@ -209,7 +212,9 @@ button {
     padding: 0 10px;
     max-width: 1200px;
   }
-  .tabbed-tabs .tab {
+  .tabbed-tabs .tab-item {
+    /*z-index: -100;*/
+    cursor: pointer;
     text-align: center;
     color: #1d4668;
     font-weight: bold;
@@ -258,8 +263,11 @@ button {
     text-transform: uppercase;
     cursor: pointer;
   }
-  section.featured {
+  section.content {
     margin-top: 80px;
+  }
+  section.featured {
+    margin-top: 0;
     position: relative;
     height: 500px;
     background-size: cover;
