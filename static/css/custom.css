@@ -125,7 +125,7 @@ li:before {
   content: "\25cf";
 }
 .pointer {
-  visibility: hidden;
+  opacity: 0;
   display: inline-block;
 	width: 0;
 	height: 0;
@@ -134,21 +134,25 @@ li:before {
 	border-right: 22px solid transparent;
 	border-bottom: 40px solid #1d4668;
 }
-.active .pointer {
-  visibility: visible;
+.active {
+  opacity: 1;
 }
+/*.tab-item:hover .pointer {
+  opacity: 0.15;
+}*/
 .tabbed-panels {
   position: relative;
   height: 150px;
 }
 .tabbed-panels .panel {
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
 .tabbed-panels .active {
-  visibility: visible;
+  opacity: 1;
+  /*visibility: visible;*/
 }
 .justified {
   text-align: justify;
