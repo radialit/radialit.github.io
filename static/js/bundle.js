@@ -124,8 +124,6 @@ const $$ = __webpack_require__(0);
 const SCROLL_DURATION = 1000;
 const TRANSITION_DURATION = 700;
 
-let scrollOffset;
-
 function getScrollOffset(querySelector) {
   const fixedEle = document.querySelector(querySelector);
   // subtract 1 to prevent showing a border
@@ -133,6 +131,8 @@ function getScrollOffset(querySelector) {
 }
 function onNavClick(event) {
   const targetID = event.currentTarget.getAttribute('data-scrollto');
+  // offset due to fixed header
+  const scrollOffset = getScrollOffset('header');
   if (!targetID) return;
   const targetEle = document.getElementById(targetID);
   if (!targetEle) return;
@@ -190,8 +190,6 @@ function onResize() {
   });
 }
 $$.ready(() => {
-  // offset due to fixed header
-  scrollOffset = getScrollOffset('header');
   // listeners for nav clicks
   const navItems = document.querySelectorAll('.nav-item');
   navItems.forEach((item) => {
