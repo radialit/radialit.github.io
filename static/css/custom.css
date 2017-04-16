@@ -143,6 +143,7 @@ li:before {
 .tabbed-panels {
   position: relative;
   height: 150px;
+  overflow: hidden;
 }
 .tabbed-panels .panel {
   opacity: 0;

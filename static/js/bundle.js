@@ -163,6 +163,32 @@ function onTabClick(event) {
   Velocity(targetEle, { opacity: 1 }, { duration: TRANSITION_DURATION, complete: () => { $$.addClass(targetEle, 'active'); } });
   event.preventDefault();
 }
+function getMaxChildHeight(ele, selector) {
+  let maxHeight = 0;
+  if (!ele) return undefined;
+  let containerEles;
+  if (selector) {
+    containerEles = ele.querySelectorAll(selector);
+    if (!containerEles.length) return undefined;
+    containerEles.forEach((containerEle) => {
+      // const height = parseInt(getComputedStyle(containerEle).height, 10);
+      const height = containerEle.offsetHeight;
+      if (height > maxHeight) maxHeight = height;
+    });
+  } else {
+
+  }
+  return maxHeight;
+}
+function onResize() {
+  const containerEles = document.querySelectorAll('.tabbed-panels');
+  if (!containerEles.length) return;
+  containerEles.forEach((containerEle) => {
+    const height = getMaxChildHeight(containerEle, '.panel');
+    if (!height) return;
+    containerEle.style.height = `${height}px`;
+  });
+}
 $$.ready(() => {
   // offset due to fixed header
   scrollOffset = getScrollOffset('header');
@@ -176,6 +202,10 @@ $$.ready(() => {
   tabItems.forEach((item) => {
     item.addEventListener('click', onTabClick, true);
   });
+  // listeners for resize
+  window.addEventListener('resize', onResize, true);
+  // call resize
+  onResize();
 });
 
 
