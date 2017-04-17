@@ -9,18 +9,19 @@
   <link rel='stylesheet' id='style-css'  href='static/css/custom.css' type='text/css' media='all' />
 </head>
 <body>
-  <header>
+  <div class="fixed">
     <div class="container">
-      <article>
+      <header>
+        <img class="logo" src="/static/images/leep_logo-270x70.png" alt="LEEP logo">
         <nav>
           <div class="nav-item" data-scrollto="home">Home</div><div class="nav-item" data-scrollto="approach">Approach</div><div class="nav-item" data-scrollto="team">The Team</div><div class="nav-item" data-scrollto="projects">Projects</div><div class="nav-button">Contact</div>
         </nav>
-      </article>
+      </header>
     </div>
-  </header>
-  <section class="content">
-    <div class="container">
-      <section id="home" class="featured featured-home">
+  </div>
+  <div class="container">
+    <div class="main">
+      <section id="home" class="featured">
         <div class="featured-slogan">Energy and Environmental Policy Innovation in a Bottom Up World</div>
       </section>
         <section id="approach">
@@ -89,12 +90,9 @@
       <section class="prefooter" style="background-image: url(static/images/flatirons.jpg);">
         <button>Join US</button>
       </section>
-    </div>
-    <div class="container">
-      <footer>
-      </footer>
-    </div>
-  </section>
+    </div> <!-- /.main -->
+    <footer></footer>
+  </div>  <!-- /.container -->
   <script type=text/javascript src=/static/js/bundle.js></script>
 </body>
 </html>
