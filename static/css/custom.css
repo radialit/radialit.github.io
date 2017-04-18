@@ -67,7 +67,7 @@ section {
   background-color: #dbf1fc;
 }
 article {
-  padding: 0.9rem 2.7rem;
+  padding: 0.9rem 2.2rem;
 }
 header {
   height: 80px;
@@ -123,8 +123,8 @@ h3 {
   margin: 0.9rem 0;
   color: #e8651a;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
 }
 ul {
   list-style: none;
