@@ -123,7 +123,7 @@ h3 {
   margin: 0.9rem 0;
   color: #e8651a;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.09rem;
   font-size: 1.2rem;
 }
 ul {
@@ -141,7 +141,7 @@ li:before {
   color: #e8651a;
   content: "\25cf";
 }
-.pointer {
+.tab-pointer {
   opacity: 0;
   display: inline-block;
 	width: 0;
@@ -153,6 +153,9 @@ li:before {
 }
 .active {
   opacity: 1;
+}
+.tab-title {
+  margin-top: 8px;
 }
 /*.tab-item:hover .pointer {
   opacity: 0.15;
@@ -273,6 +276,24 @@ section.prefooter {
   justify-content: center;
   height: 250px;
   background-size: cover;
+}
+.icon {
+  background-position: 0 0;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+  background-image: url('/static/images/icons.png');
+  background-repeat: no-repeat;
+}
+.icon-approach-mission {
+  background-position: 0 0;
+}
+.icon-approach-strategy {
+  background-position: -70px 0;
+}
+.icon-approach-activities {
+  background-position: -140px 0;
 }
 @media screen and (min-width: 800px) {
   /* Desktop styles go here */

@@ -142,12 +142,12 @@ function onNavClick(event) {
 function onTabClick(event) {
   // fade out sibling pointers
   $$.siblings(event.currentTarget).forEach((tabEle) => {
-    const pointerEle = tabEle.querySelector('.pointer');
+    const pointerEle = tabEle.querySelector('.tab-pointer');
     if (!pointerEle) return;
     Velocity(pointerEle, { opacity: 0 }, { duration: TRANSITION_DURATION, complete: () => { $$.removeClass(pointerEle, 'active'); pointerEle.style = ''; } });
   });
   // fade in pointer for active tab
-  const pointerEle = event.currentTarget.querySelector('.pointer');
+  const pointerEle = event.currentTarget.querySelector('.tab-pointer');
   if (pointerEle) {
     Velocity(pointerEle, { opacity: 1 }, { duration: TRANSITION_DURATION, complete: () => { $$.addClass(pointerEle, 'active'); } });
   }
