@@ -31,8 +31,10 @@ body {
   margin: 10px 20px 10px 20px;
 }
 .projects {
-  padding-top: 15px;
-  padding-bottom: 75px;
+  /*padding-top: 15px;*/
+  /*padding-bottom: 75px;*/
+  padding-top: 0;
+  padding-bottom: 20px;
 }
 .flex-nav {
   display: flex;
@@ -47,7 +49,7 @@ body {
 }
 /* section classes */
 section {
-  padding-top: 20px;
+  padding-top: 10px;
   color: inherit;
   background-color: inherit;
 }
@@ -93,7 +95,7 @@ header {
 }
 h2 {
   color: #1d4668;
-  letter-spacing: 0.15rem;
+  /*letter-spacing: 0.15rem;*/
   text-transform: uppercase;
   white-space: nowrap;
   display: flex;
@@ -119,9 +121,9 @@ h2::after {
   background-color: #ffffff;
 }
 h3 {
-  /*margin: 10px 0;*/
   margin: 0.9rem 0;
   color: #e8651a;
+  /*color: #ea9522;*/
   text-transform: uppercase;
   letter-spacing: 0.09rem;
   font-size: 1.2rem;
@@ -139,6 +141,7 @@ li:before {
   float: left;
   width: 1.5rem;
   color: #e8651a;
+  /*color: #ea9522;*/
   content: "\25cf";
 }
 .tab-pointer {
@@ -198,6 +201,8 @@ button {
   border-radius: 4px;
   background-color: #e8651a;
   border: 1px solid #e8651a;
+  /*background-color: #FF984D;*/
+  /*border: 1px solid #FF984D;*/
   color: #ffffff;
   padding: 6px 14px;
   text-align: center;
@@ -361,6 +366,7 @@ section.prefooter {
   }
   footer {
     border-top: 10px solid #e8651a;
+    /*border-top: 10px solid #ea9522;*/
     min-height: 75px;
   }
 }
