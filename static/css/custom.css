@@ -125,7 +125,7 @@ h3 {
   color: #e8651a;
   /*color: #ea9522;*/
   text-transform: uppercase;
-  letter-spacing: 0.09rem;
+  /*letter-spacing: 0.09rem;*/
   font-size: 1.2rem;
 }
 ul {
@@ -192,17 +192,17 @@ button {
   display: inline;
   font-weight: bold;
   font-size: 1.3rem;
-  letter-spacing: 0.08rem;
+  /*letter-spacing: 0.08rem;*/
   text-decoration: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  background-color: #e8651a;
-  border: 1px solid #e8651a;
-  /*background-color: #FF984D;*/
-  /*border: 1px solid #FF984D;*/
+  /*background-color: #e8651a;*/
+  /*border: 1px solid #e8651a;*/
+  background-color: #FF984D;
+  border: 1px solid #FF984D;
   color: #ffffff;
   padding: 6px 14px;
   text-align: center;
