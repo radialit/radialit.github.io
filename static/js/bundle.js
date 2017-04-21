@@ -122,7 +122,7 @@ const Velocity = __webpack_require__(1);
 const $$ = __webpack_require__(0);
 
 const SCROLL_DURATION = 1000;
-const TRANSITION_DURATION = 500;
+const TRANSITION_DURATION = 100;
 
 function getScrollOffset(querySelector) {
   const fixedEle = document.querySelector(querySelector);
