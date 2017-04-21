@@ -30,11 +30,23 @@ body {
   text-align: center;
   margin: 10px 20px 10px 20px;
 }
+a {
+  text-decoration: none;
+}
+/*a:hover {
+  color: #e97400;
+}*/
 .projects {
   /*padding-top: 15px;*/
   /*padding-bottom: 75px;*/
   padding-top: 0;
   padding-bottom: 20px;
+}
+.projects a, .partners a {
+  color: inherit;
+}
+.projects a:hover, .partners a:hover {
+  color: #e97400;
 }
 .flex-nav {
   display: flex;
