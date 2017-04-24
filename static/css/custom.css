@@ -7,7 +7,8 @@ html {
 }
 body {
   font-family: 'Archivo Narrow', sans-serif;
-  color: #808287;
+  color: #004a68;
+  /*color: #808287;*/
 }
 *, *:before, *:after {
   box-sizing: inherit;
