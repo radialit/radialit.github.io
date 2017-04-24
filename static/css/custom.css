@@ -103,6 +103,12 @@ header {
   background-color: #ffffff;
   overflow: hidden;
 }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
 .header-logo {
   margin-top: 15px;
 }
@@ -271,10 +277,13 @@ button {
 section.featured {
   margin-top: 0;
   /*height: 330px;*/
-  background-image: url(/static/images/globe_lights_w_overlay-1000x413.jpg);
+  background-image: url("/static/images/globe_lights_w_overlay-1000x413.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   /*background-position: center;*/
+}
+section.featured-secondary {
+  background-image: url("/static/images/globe_lights_w_overlay_secondary-1000x159.jpg");
 }
 section.featured .featured-slogan {
   margin-top: 70px;
@@ -396,5 +405,9 @@ footer {
     margin-top: 80px;
     text-align: center;
     font-size: 2rem;
+  }
+  section.featured-secondary {
+    background-image: url("/static/images/globe_lights_w_overlay_secondary-1000x159.jpg");
+    height: 159px;
   }
 }

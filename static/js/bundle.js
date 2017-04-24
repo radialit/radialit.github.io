@@ -124,15 +124,16 @@ const $$ = __webpack_require__(0);
 const SCROLL_DURATION = 1000;
 const TRANSITION_DURATION = 100;
 
-function getScrollOffset(querySelector) {
-  const fixedEle = document.querySelector(querySelector);
-  // subtract 1 to prevent showing a border
-  return (fixedEle) ? (fixedEle.offsetHeight - 1) : 0;
-}
+// function getScrollOffset(querySelector) {
+//   const fixedEle = document.querySelector(querySelector);
+//   // subtract 1 to prevent showing a border
+//   return (fixedEle) ? (fixedEle.offsetHeight - 1) : 0;
+// }
 function onNavClick(event) {
   const targetID = event.currentTarget.getAttribute('data-scrollto');
   // offset due to fixed header
-  const scrollOffset = getScrollOffset('header');
+  // const scrollOffset = getScrollOffset('header');
+  const scrollOffset = -1;
   if (!targetID) return;
   const targetEle = document.getElementById(targetID);
   if (!targetEle) return;
@@ -145,6 +146,7 @@ function onTabClick(event) {
     const pointerEle = tabEle.querySelector('.tab-pointer');
     if (!pointerEle) return;
     Velocity(pointerEle, { opacity: 0 }, { duration: TRANSITION_DURATION, complete: () => { $$.removeClass(pointerEle, 'active'); pointerEle.style = ''; } });
+    event.preventDefault();
   });
   // fade in pointer for active tab
   const pointerEle = event.currentTarget.querySelector('.tab-pointer');

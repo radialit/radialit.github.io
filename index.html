@@ -5,102 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEEP</title>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:bold" rel="stylesheet">
-  <link rel='stylesheet' id='style-css'  href='static/css/normalize.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='style-css'  href='static/css/custom.css' type='text/css' media='all' />
+  <link href='/static/css/normalize.css' type='text/css' media='all' rel='stylesheet'>
+  <link href='/static/css/custom.css' type='text/css' media='all' rel='stylesheet'>
 </head>
 <body>
   <div class="fixed">
     <div class="container">
       <header>
-        <img class="header-logo" src="/static/images/logo_392x70.png" alt="LEEP logo">
+        <a href="/"><img class="header-logo" src="/static/images/logo_392x70.png" alt="LEEP logo"></a>
         <nav>
-          <div class="nav-item" data-scrollto="home">Home</div><div class="nav-item" data-scrollto="approach">Approach</div><div class="nav-item" data-scrollto="projects">Projects</div><div class="nav-item" data-scrollto="team">The Team</div><div class="nav-button">Contact</div>
+          <!-- <a class="nav-item" href="/">Home</a><a class="nav-item" href="/approach">Approach</a><a class="nav-item" data-scrollto="projects">Projects</a><a class="nav-item" href="/team">The Team</a><div class="nav-button">Contact</div> -->
+          <a class="nav-item" href="/" >Home</a><a class="nav-item" href="/approach" >Approach</a><a class="nav-item" href="/#projects" data-scrollto="projects">Projects</a><a class="nav-item" href="/team" >The Team</a><div class="nav-button">Contact</div>
         </nav>
       </header>
     </div>
   </div>
   <div class="container">
     <div class="main">
-      <section id="home" class="featured">
+      <a class="anchor" id="home"></a>
+      <section class="featured featured-primary">
         <div class="featured-slogan">Energy and Environmental Policy Innovation in a Bottom Up World</div>
       </section>
         <section class="secondary">
-          <article>
-            We are a policy innovation lab based at the University of Colorado, Boulder. We work with partners around the world to develop and support real-time policy experiments, establish robust networks for learning and exchange, and contribute to effective and durable policy outcomes.
-          </article>
-        </section>
-        <section id="approach">
-          <h2>Approach</h2>
-          <div class="tabbed">
-            <div class="tabbed-tabs flex-nav">
-                <div class="tab-item flex-nav-tab" data-transitionto="approach-mission">
-                  <span class="icon icon-approach-mission"></span>
-                  <div class="tab-title">Mission</div>
-                  <div class="tab-pointer active"></div>
-                </div>
-                <div class="tab-item flex-nav-tab" data-transitionto="approach-strategy">
-                  <span class="icon icon-approach-strategy"></span>
-                  <div class="tab-title">Strategy</div>
-                  <div class="tab-pointer"></div>
-                </div>
-                <div class="tab-item flex-nav-tab" data-transitionto="approach-activities">
-                  <span class="icon icon-approach-activities"></span>
-                  <div class="tab-title">Activities</div>
-                  <div class="tab-pointer"></div>
-                </div>
-            </div>
-            <div class="tabbed-panels primary-light justified">
-                <div class="panel active" id="approach-mission">
-                  <article>Our goal at LEEP is to develop and support real-time policy experiments, robust networks for learning and exchange, meaningful processes for stakeholder engagement, and durable policy outcomes.</article>
-                </div>
-                <div class="panel" id="approach-strategy">
-                  <article>We embrace a network approach to governance. We work to thicken the relationships between government, civil society, and the private sector in the regions where we work while also forging broader connections with ongoing policy initiatives and processes around the world.</article>
-                </div>
-                <div class="panel" id="approach-activities">
-                  <article>LEEP’s major activities can be divided into three categories: (1) real-time policy experimentation; (2) analysis, support, and knowledge management; and (3) education and exchange.</article>
-                </div>
-            </div>
+    <article>
+      We are a policy innovation lab based at the University of Colorado, Boulder. We work with partners around the world to develop and support real-time policy experiments, establish robust networks for learning and exchange, and contribute to effective and durable policy outcomes.
+    </article>
+  </section>
+  <a class="anchor" id="approach"></a>
+  <section>
+    <h2>Approach</h2>
+    <div class="tabbed">
+      <div class="tabbed-tabs flex-nav">
+          <div class="tab-item flex-nav-tab" data-transitionto="approach-mission">
+            <span class="icon icon-approach-mission"></span>
+            <div class="tab-title">Mission</div>
+            <div class="tab-pointer active"></div>
           </div>
-        </section>
-        <section id="projects" class="inverted">
-          <h2>Projects</h2>
-          <div class="flex-row projects">
-              <div class="flex-row-column"><a target="_blank" href="http://gcftaskforce.org">Governors’ Climate &amp; Forests Task Force (GCF)</a></div>
-              <div class="flex-row-column">Public Utilities Commission Clean Energy Policy Collaborative Project</div>
-              <div class="flex-row-column">Sustainable LA Grand Challenge</div>
-              <div class="flex-row-column">Clean Energy for El Alto</div>
-              <div class="flex-row-column">Acre-Colorado Exchange</div>
+          <div class="tab-item flex-nav-tab" data-transitionto="approach-strategy">
+            <span class="icon icon-approach-strategy"></span>
+            <div class="tab-title">Strategy</div>
+            <div class="tab-pointer"></div>
           </div>
-        </section>
-        <section id="team">
-          <h2>Team</h2>
-          <h3 class="centered">Core Team</h3>
-          <article>
-            <div style="height: 200px;"></div><!-- use inline style for height until actual content is available -->
-          </article>
-        </section>
-        <section class="primary-light partners">
-          <article>
-            <div class="row">
-                <div class="half column">
-                  <h3 class="bumped-left">Institutional Partners</h3>
-                  <ul>
-                    <li><a href="http://www.colorado.edu/rasei/" target="_blank">Renewable and Sustainable Energy Institute (RASEI)</a></li><li><a href="http://www.colorado.edu/law/research/gwc" target="_blank">Getches-Wilkinson Center for Natural Resources, Energy, and the Environment</a></li><li>NREL Joint Institute for Strategic Energy Analysis</li><li>Earth Innovation Institute</li><li>Global Greengrants Fund and RTC Impact Fund</li>
-                  </ul>
-                </div>
-                <div class="half column">
-                  <h3 class="bumped-left">Laboratory Affiliates</h3>
-                  <ul>
-                    <li>CU Researchers from Environmental Studies, Law Geography,</li><li>Anthropology, and other departments</li><li>National Renewable Energy Lab (NREL) Researchers</li>
-                  </ul>
-                </div>
-            </div>
-          </article>
-        </section>
-      <section class="prefooter" style="background-image: url(static/images/flatirons-1000x250.jpg);">
-        <button>Join US</button>
-      </section>
-    </div> <!-- /.main -->
+          <div class="tab-item flex-nav-tab" data-transitionto="approach-activities">
+            <span class="icon icon-approach-activities"></span>
+            <div class="tab-title">Activities</div>
+            <div class="tab-pointer"></div>
+          </div>
+      </div>
+      <div class="tabbed-panels primary-light justified">
+          <div class="panel active" id="approach-mission">
+            <article>Our goal at LEEP is to develop and support real-time policy experiments, robust networks for learning and exchange, meaningful processes for stakeholder engagement, and durable policy outcomes.</article>
+          </div>
+          <div class="panel" id="approach-strategy">
+            <article>We embrace a network approach to governance. We work to thicken the relationships between government, civil society, and the private sector in the regions where we work while also forging broader connections with ongoing policy initiatives and processes around the world.</article>
+          </div>
+          <div class="panel" id="approach-activities">
+            <article>LEEP’s major activities can be divided into three categories: (1) real-time policy experimentation; (2) analysis, support, and knowledge management; and (3) education and exchange.</article>
+          </div>
+      </div>
+    </div>
+  </section>
+  <a class="anchor" id="projects"></a>
+  <section class="inverted">
+    <h2>Projects</h2>
+    <div class="flex-row projects">
+        <div class="flex-row-column"><a target="_blank" href="http://gcftaskforce.org">Governors’ Climate &amp; Forests Task Force (GCF)</a></div>
+        <div class="flex-row-column">Public Utilities Commission Clean Energy Policy Collaborative Project</div>
+        <div class="flex-row-column">Sustainable LA Grand Challenge</div>
+        <div class="flex-row-column">Clean Energy for El Alto</div>
+        <div class="flex-row-column">Acre-Colorado Exchange</div>
+    </div>
+  </section>
+  <a class="anchor" id="team"></a>
+  <section>
+    <h2>Team</h2>
+    <h3 class="centered">Core Team</h3>
+    <article>
+      <div style="height: 200px;"></div><!-- use inline style for height until actual content is available -->
+    </article>
+  </section>
+  <section class="primary-light partners">
+    <article>
+      <div class="row">
+          <div class="half column">
+            <h3 class="bumped-left">Institutional Partners</h3>
+            <ul>
+              <li><a href="http://www.colorado.edu/rasei/" target="_blank">Renewable and Sustainable Energy Institute (RASEI)</a></li><li><a href="http://www.colorado.edu/law/research/gwc" target="_blank">Getches-Wilkinson Center for Natural Resources, Energy, and the Environment</a></li><li>NREL Joint Institute for Strategic Energy Analysis</li><li>Earth Innovation Institute</li><li>Global Greengrants Fund and RTC Impact Fund</li>
+            </ul>
+          </div>
+          <div class="half column">
+            <h3 class="bumped-left">Laboratory Affiliates</h3>
+            <ul>
+              <li>CU Researchers from Environmental Studies, Law Geography,</li><li>Anthropology, and other departments</li><li>National Renewable Energy Lab (NREL) Researchers</li>
+            </ul>
+          </div>
+      </div>
+    </article>
+  </section>
+<section class="prefooter" style="background-image: url(static/images/flatirons-1000x250.jpg);">
+  <button>Join US</button>
+</section>
+
+    </div>
     <footer>
       <a href="http://www.colorado.edu/" target="_blank"><img class="footer-logo" src="/static/images/cu_logo-240x66.png" alt="LEEP logo"></a>
     </footer>
