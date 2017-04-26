@@ -101,8 +101,26 @@ section {
 article {
   padding: 0.9rem 2.2rem;
 }
-article > h3 {
+article h3 {
   margin-top: 0;
+}
+.team figure {
+  /*float: left;*/
+  margin: 0;
+  padding: 0;
+  /*margin: 0 10px 10px 0;*/
+  height: 180px;
+  width: 200px;
+}
+.team img {
+  height: 180px;
+  width: 180px;
+  border: 1px solid #2d3e50;
+}
+.team .details {
+  /*min-height: 180px;*/
+  /*float: left;*/
+  /*margin-left: 190px;*/
 }
 header {
   height: 100px;
@@ -380,6 +398,9 @@ footer {
   }
   .two-thirds {
     width: calc(100% / 3 * 2);
+  }
+  .three-fourths {
+    width: calc(100% / 4 * 3);
   }
   .column {
     float: left;
