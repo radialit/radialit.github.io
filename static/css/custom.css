@@ -97,6 +97,9 @@ section {
 article {
   padding: 0.9rem 2.2rem;
 }
+article > h3 {
+  margin-top: 0;
+}
 header {
   height: 100px;
   padding: 0 10px;
