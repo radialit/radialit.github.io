@@ -45,6 +45,7 @@ a {
   /*padding-bottom: 75px;*/
   padding-top: 0;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .projects a, .partners a {
   color: inherit;
