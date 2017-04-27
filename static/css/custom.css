@@ -12,6 +12,34 @@ body {
   color: #004a68;
   /*color: #808287;*/
 }
+.person {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow: hidden;
+}
+.person:first-child {
+  margin-top: 0;
+}
+.person figure {
+  flex-basis: 100px;
+  margin: 0;
+  padding: 0 20px 10px 0;
+  /*flex: 0 1 100px;*/
+}
+.person img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #1d4668;
+}
+.person .bio {
+
+}
+.person .name {
+  font-weight: bold;
+  color: #000000;
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -221,6 +249,7 @@ h3 {
   font-size: 1.2rem;
 }
 h4 {
+  margin: 0.9rem 0;
   color: #000000;
   font-weight: bold;
 }
