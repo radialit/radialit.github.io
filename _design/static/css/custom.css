@@ -16,8 +16,6 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
-  max-height: 150px;
-  overflow: hidden;
 }
 .person:first-child {
   margin-top: 0;
@@ -34,7 +32,9 @@ body {
   border: 1px solid #1d4668;
 }
 .person .bio {
-
+  max-height: 150px;
+  overflow: hidden;
+  position: relative;
 }
 .person .name {
   font-weight: bold;
@@ -42,6 +42,14 @@ body {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+.fadeout {
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  height: 90px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 90;
+  width: 100%;
 }
 .row::before,
 .row::after {
