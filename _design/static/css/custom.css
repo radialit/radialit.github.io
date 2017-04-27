@@ -9,8 +9,8 @@ body {
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: normal;
   line-height: 1.25;
-  color: #004a68;
-  /*color: #444444;*/
+  /*color: #004a68;*/
+  color: #444444;
 }
 .person {
   display: flex;
