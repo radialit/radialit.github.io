@@ -156,9 +156,19 @@ button {
 .header__logo {
   height: 70px;
   left: 0;
+  padding-right: 10px;
   position: relative;
   top: 15px;
   width: auto; }
+
+.header__name {
+  color: #1d4668;
+  display: inline-block;
+  height: 70px;
+  margin: auto 0 auto 10px;
+  position: relative;
+  top: 15px;
+  width: 180px; }
 
 .nav--site {
   display: block;
@@ -210,7 +220,7 @@ footer {
 
 .icon {
   background-image: url("/static/images/icons.png");
-  background-position: 0 0;
+  background-position: 0 -70px;
   background-repeat: no-repeat;
   display: inline-block;
   height: 70px;
@@ -218,13 +228,13 @@ footer {
   width: 70px; }
 
 .icon-approach-mission {
-  background-position: 0 0; }
+  background-position: 0 -70px; }
 
 .icon-approach-strategy {
-  background-position: -70px 0; }
+  background-position: -70px -70px; }
 
 .icon-approach-activities {
-  background-position: -140px 0; }
+  background-position: -140px -70px; }
 
 .prefooter {
   align-items: center;
