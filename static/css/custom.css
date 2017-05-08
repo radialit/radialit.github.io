@@ -32,6 +32,8 @@ body {
 }
 .team-member .name, .team-member .title {
   font-weight: bold;
+  margin: 0.45rem 0;
+  line-height: 0.95rem;
   color: #333;
   text-decoration: none;
 }
@@ -317,7 +319,7 @@ li:before {
 }*/
 .tabbed-panels {
   position: relative;
-  height: 150px;
+  height: 74px;
   overflow: hidden;
 }
 .tabbed-panels .panel {

@@ -5,30 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEEP</title>
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:narrow,bold" rel="stylesheet">
-  <!-- <link href='/static/css/normalize.css' type='text/css' media='all' rel='stylesheet'> -->
-  <link href='/static/css/custom.css' type='text/css' media='all' rel='stylesheet'>
+  <link href='/static/css/normalize.css' type='text/css' media='all' rel='stylesheet'>
+  <link href='/static/css/style.css' type='text/css' media='all' rel='stylesheet'>
 </head>
 <body>
-  <div class="fixed">
+  <header class="header header--site">
     <div class="container">
-      <header>
-        <a href="/"><img class="header-logo" src="/static/images/logo_392x70.png" alt="LEEP logo"></a>
-        <nav>
-          <!-- <a class="nav-item" href="">Home</a><a class="nav-item" href="approach">Approach</a><a class="nav-item" data-scrollto="projects">Projects</a><a class="nav-item" href="team">The Team</a><div class="nav-button">Contact</div> -->
-          <a class="nav-item" href="/" >Home</a><a class="nav-item" href="/approach" >Approach</a><a class="nav-item" href="/#projects" data-scrollto="projects">Projects</a><a class="nav-item" href="/team" >The Team</a><div class="nav-button">Contact</div>
-        </nav>
-      </header>
-    </div>
-  </div>
-  <div class="container">
-    <div class="main">
-      <a class="anchor" id="home"></a>
-      <section class="featured featured-secondary">
-        <div class="featured-slogan">Energy and Environmental Policy Innovation in a Bottom Up World</div>
-      </section>
+      <a href="/"><img class="header__logo" src="/static/images/logo_392x70.png" alt="LEEP logo"></a>
+      <ul class="nav nav--site">
+        <li class="nav__item"><a href="/" >Home</a></li><li class="nav__item"><a href="/approach" >Approach</a></li><li class="nav__item"><a href="/#projects" data-scrollto="projects">Projects</a></li><li class="nav__item"><a href="/team" >The Team</a></li><li class="nav__item nav__item--button">Contact</li>
+      </nav>
+    </ul>
+  </header>
+  <div class="main">
+    <div class="container">
+      <div class="hero hero--secondary">
+          <div class="hero__slogan content">Energy and Environmental Policy Innovation in a Bottom Up World</div>
+          <div class="hero__description content">We are a policy innovation lab based at the University of Colorado, Boulder. We work with partners around the world to develop and support real-time policy experiments, establish robust networks for learning and exchange, and contribute to effective and durable policy outcomes.</div>
+      </div>
       <section>
   <h2>Approach</h2>
-  <article id="approach">
+  <article id="approach" class="content">
       <h3>Mission</h3>
         <p>Our goal at LEEP is to develop and support real-time policy experiments, robust networks for learning and exchange, meaningful processes for stakeholder engagement, and durable policy outcomes.</p><p>We start from the premise that bottom-up approaches to climate, energy, and environmental problems must be the foundation for any lasting solutions. Much of the hard work and many of the most important policy experiments aimed at tackling these problems are taking place at subnational levels. The challenge is to connect, replicate, scale, and learn from these efforts.</p><p>Our theory of change starts from the premise that subnational governments (including states and provinces, counties and districts, cities and municipalities, and communities and villages) are critical actors in the effort to fight climate change, promote clean energy, and build durable frameworks for environmentally sustainable development. We believe that effective solutions to many of our energy and environmental problems must be public-private in character and that, in all cases, they must fit with and grow out of vernacular institutions. To that end, we focus on mobilizing and engaging political leaders, empowering civil servants, and connecting them with civil society partners in a manner that will advance integrated and equitable approaches to sustainable development.</p>
       <h3>Strategy</h3>
@@ -39,10 +36,12 @@
 </section>
 
     </div>
-    <footer>
-      <a href="http://www.colorado.edu/" target="_blank"><img class="footer-logo" src="/static/images/cu_logo-240x66.png" alt="LEEP logo"></a>
-    </footer>
-  </div>  <!-- /.container -->
+    <div class="container">
+      <footer>
+        <a href="http://www.colorado.edu/" target="_blank"><img class="footer-logo" src="/static/images/cu_logo-240x66.png" alt="LEEP logo"></a>
+      </footer>
+    </div>  <!-- /.container -->
+  </div>  <!-- /.main -->
   <script type="text/javascript" src="/static/js/bundle.js"></script>
 </body>
 </html>

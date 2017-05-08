@@ -123,6 +123,7 @@ const $$ = __webpack_require__(0);
 
 const SCROLL_DURATION = 1000;
 const TRANSITION_DURATION = 100;
+const TAB_INDICATOR_SELECTOR = '.icon-indicator';
 
 // function getScrollOffset(querySelector) {
 //   const fixedEle = document.querySelector(querySelector);
@@ -143,15 +144,15 @@ function onNavClick(event) {
 function onTabClick(event) {
   // fade out sibling pointers
   $$.siblings(event.currentTarget).forEach((tabEle) => {
-    const pointerEle = tabEle.querySelector('.tab-pointer');
-    if (!pointerEle) return;
-    Velocity(pointerEle, { opacity: 0 }, { duration: TRANSITION_DURATION, complete: () => { $$.removeClass(pointerEle, 'active'); pointerEle.style = ''; } });
+    const indicatorEle = tabEle.querySelector(TAB_INDICATOR_SELECTOR);
+    if (!indicatorEle) return;
+    Velocity(indicatorEle, { opacity: 0 }, { duration: TRANSITION_DURATION, complete: () => { $$.removeClass(indicatorEle, 'active'); indicatorEle.style = ''; } });
     event.preventDefault();
   });
   // fade in pointer for active tab
-  const pointerEle = event.currentTarget.querySelector('.tab-pointer');
-  if (pointerEle) {
-    Velocity(pointerEle, { opacity: 1 }, { duration: TRANSITION_DURATION, complete: () => { $$.addClass(pointerEle, 'active'); } });
+  const indicatorEle = event.currentTarget.querySelector(TAB_INDICATOR_SELECTOR);
+  if (indicatorEle) {
+    Velocity(indicatorEle, { opacity: 1 }, { duration: TRANSITION_DURATION, complete: () => { $$.addClass(indicatorEle, 'active'); } });
   }
   const targetID = event.currentTarget.getAttribute('data-transitionto');
   if (!targetID) return;
@@ -175,6 +176,7 @@ function getMaxChildHeight(ele, selector) {
     containerEles.forEach((containerEle) => {
       // const height = parseInt(getComputedStyle(containerEle).height, 10);
       const height = containerEle.offsetHeight;
+      // console.log(height);
       if (height > maxHeight) maxHeight = height;
     });
   } else {
@@ -183,22 +185,23 @@ function getMaxChildHeight(ele, selector) {
   return maxHeight;
 }
 function onResize() {
-  const containerEles = document.querySelectorAll('.tabbed-panels');
+  const containerEles = document.querySelectorAll('.tabbed__panels');
   if (!containerEles.length) return;
   containerEles.forEach((containerEle) => {
     const height = getMaxChildHeight(containerEle, '.panel');
     if (!height) return;
+    console.log(height);
     containerEle.style.height = `${height}px`;
   });
 }
 $$.ready(() => {
   // listeners for nav clicks
-  const navItems = document.querySelectorAll('.nav-item');
+  const navItems = document.querySelectorAll('.nav--site .nav__item');
   navItems.forEach((item) => {
     item.addEventListener('click', onNavClick);
   });
   // listeners for tab clicks
-  const tabItems = document.querySelectorAll('.tab-item');
+  const tabItems = document.querySelectorAll('.tabbed__tabs .tabbed__item');
   tabItems.forEach((item) => {
     item.addEventListener('click', onTabClick, true);
     item.addEventListener('mouseenter', onTabClick, true);
