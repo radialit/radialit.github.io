@@ -198,6 +198,9 @@ button {
     display: inline-block;
     line-height: 30px; }
 
+.nav__item--active a {
+  border-bottom: 3px solid #1d4668; }
+
 .nav__item--button {
   border-radius: 5px;
   background-color: #1d4668;

@@ -136,6 +136,7 @@ function onNavClick(event) {
   // const scrollOffset = getScrollOffset('header');
   const scrollOffset = -1;
   if (!targetID) return;
+  console.log('scroll');
   const targetEle = document.getElementById(targetID);
   if (!targetEle) return;
   Velocity(targetEle, 'scroll', { duration: SCROLL_DURATION, axis: 'y', offset: -scrollOffset });
@@ -176,7 +177,6 @@ function getMaxChildHeight(ele, selector) {
     containerEles.forEach((containerEle) => {
       // const height = parseInt(getComputedStyle(containerEle).height, 10);
       const height = containerEle.offsetHeight;
-      // console.log(height);
       if (height > maxHeight) maxHeight = height;
     });
   } else {
@@ -190,16 +190,15 @@ function onResize() {
   containerEles.forEach((containerEle) => {
     const height = getMaxChildHeight(containerEle, '.panel');
     if (!height) return;
-    console.log(height);
     containerEle.style.height = `${height}px`;
   });
 }
 $$.ready(() => {
   // listeners for nav clicks
-  const navItems = document.querySelectorAll('.nav--site .nav__item');
-  navItems.forEach((item) => {
-    item.addEventListener('click', onNavClick);
-  });
+  // const navItems = document.querySelectorAll('.nav--site .nav__item');
+  // navItems.forEach((item) => {
+  //   item.addEventListener('click', onNavClick);
+  // });
   // listeners for tab clicks
   const tabItems = document.querySelectorAll('.tabbed__tabs .tabbed__item');
   tabItems.forEach((item) => {
