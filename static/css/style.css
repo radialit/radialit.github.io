@@ -224,21 +224,21 @@ footer {
 
 .icon {
   background-image: url("/static/images/icons.png");
-  background-position: 0 -70px;
+  background-position: 0 -100px;
   background-repeat: no-repeat;
   display: inline-block;
-  height: 70px;
+  height: 100px;
   vertical-align: middle;
-  width: 70px; }
+  width: 100px; }
 
 .icon-approach-mission {
-  background-position: 0 -70px; }
+  background-position: 0 -100px; }
 
 .icon-approach-strategy {
-  background-position: -70px -70px; }
+  background-position: -100px -100px; }
 
 .icon-approach-activities {
-  background-position: -140px -70px; }
+  background-position: -200px -100px; }
 
 .prefooter {
   align-items: center;
@@ -257,16 +257,22 @@ footer {
 .tabbed__tabs {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  justify-content: center; }
   .tabbed__tabs .tabbed__item {
     color: #1d4668;
     cursor: pointer;
-    flex: 1;
     font-weight: bold;
+    justify-content: center;
     letter-spacing: .1rem;
     margin: 0 0 -10px;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 140px; }
+    .tabbed__tabs .tabbed__item a {
+      color: inherit; }
+    .tabbed__tabs .tabbed__item .tabbed__title {
+      margin: .45rem 0; }
 
 .tabbed__panels {
   overflow: hidden;

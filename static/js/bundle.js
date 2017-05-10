@@ -202,7 +202,7 @@ $$.ready(() => {
   // listeners for tab clicks
   const tabItems = document.querySelectorAll('.tabbed__tabs .tabbed__item');
   tabItems.forEach((item) => {
-    item.addEventListener('click', onTabClick, true);
+    // item.addEventListener('click', onTabClick, true);
     item.addEventListener('mouseenter', onTabClick, true);
   });
   // listeners for resize
