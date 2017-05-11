@@ -38,6 +38,9 @@
 .team .member__details .member__detail--title {
   font-weight: bold; }
 
+.project__name {
+  font-weight: bold; }
+
 .list {
   display: block;
   list-style: none;
